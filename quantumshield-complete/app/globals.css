@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-netflix-black text-white;
+  }
+}
+
+@layer utilities {
+  .netflix-card {
+    @apply bg-netflix-darkGray rounded-lg border border-netflix-gray/40;
+  }
+
+  .netflix-button {
+    @apply bg-quantum-cyan text-netflix-black font-semibold
+           px-6 py-3 rounded transition-colors duration-150
+           hover:bg-quantum-teal;
+  }
+
+  .gradient-text {
+    @apply text-quantum-cyan;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121821;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4FD1C5;
+  border-radius: 5px;
+}
